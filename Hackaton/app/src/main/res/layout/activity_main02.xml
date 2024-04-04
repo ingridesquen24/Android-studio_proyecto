@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity02">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/color_azul">
+        <LinearLayout
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@drawable/logo04"
+                android:layout_width="80dp"
+                android:layout_height="180dp"
+                android:layout_marginBottom="15dp">
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="#2DCCE6">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <EditText
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:id="@+id/idUsuario"
+                        android:layout_marginTop="35dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:hint="Correo">
+                    </EditText>
+                    <EditText
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:layout_marginTop="20dp"
+                        android:hint="Contraseña"
+                        android:id="@+id/idContrasena"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:ems="10"
+                        android:inputType="textPassword" />
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnIniciar"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        app:cardCornerRadius="20dp"
+                        android:backgroundTint="#4080BE"
+                        android:clickable="true"
+                        >
+                        <TextView
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Iniciar Sesión"
+                            >
+                        </TextView>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
